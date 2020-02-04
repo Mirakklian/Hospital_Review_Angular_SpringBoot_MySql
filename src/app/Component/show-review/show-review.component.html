@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col xs-12">
+        
+        <div class="container">
+            <h2 style="color: slateblue;">Hospital Review Details:</h2>
+            <hr>
+            <table class="table table-striped">
+              <thead>
+                  <tr>
+                    <th>Hospital Name</th>
+                    <th>Rating(Based On 10)</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let rev of review">
+                  <td>{{ rev.hospitalName }}</td>
+                  <td>{{ rev.rating }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+    </div>
+</div>
+

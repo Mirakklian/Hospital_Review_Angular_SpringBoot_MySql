@@ -1,0 +1,10 @@
+<app-header (selected)="onNavigate($event)"></app-header>
+
+ <div class="container">
+   <div class="row">
+     <div class="col-md-12">
+      <app-submit-review *ngIf="checkfeature==='submitrating'"></app-submit-review>
+      <app-show-review *ngIf="checkfeature==='showrating'"></app-show-review>
+     </div>
+   </div>
+ </div>
